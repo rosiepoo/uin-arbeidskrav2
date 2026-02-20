@@ -1,0 +1,76 @@
+ .item-name {
+ 	margin-left: 0;
+ 	position: relative;
+ 	display: inline-block;
+ 	z-index: 0;
+}
+
+.item-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* Make checkboxes match the size and style of text inputs */
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: var(--input-height);
+	height: var(--input-height);
+	border: var(--input-border);
+	background: var(--input-bg);
+	border-radius: var(--input-border-radius);
+	display: inline-grid;
+	place-items: center;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+input[type="checkbox"]:checked {
+	background-color: rgba(var(--accent-yellow), 1);
+	border-color: rgba(var(--accent-yellow-dark), 0.9);
+	background-image: url('../assets/flower.svg');
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.6rem 0.8rem;
+	border-radius: 8px;
+	background: #ffffff;
+	border: 1px solid rgba(var(--accent-yellow-dark), 0.16);
+	position: relative;
+}
+
+li.bought .item-name {
+	/* use text-decoration for a reliable strike-through that overlays the text */
+	opacity: 0.9;
+	text-decoration: line-through;
+	text-decoration-color: rgba(var(--accent-yellow-dark), 0.9);
+	text-decoration-thickness: 2px;
+	text-decoration-skip-ink: none;
+}
+
+input[type="number"] {
+	width: 4.5rem;
+	padding: var(--input-padding-y) var(--input-padding-x);
+	border-radius: var(--input-border-radius);
+	border: var(--input-border);
+	background: var(--input-bg);
+	height: var(--input-height);
+	box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+	outline: none;
+	border-color: rgba(var(--accent-yellow), 0.9);
+	box-shadow: 0 0 0 6px rgba(var(--accent-yellow), 0.08);
+}

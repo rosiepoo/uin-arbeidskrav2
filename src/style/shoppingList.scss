@@ -1,0 +1,23 @@
+section {
+  margin-top: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.section-wrapper {
+  display: block;
+  max-width: 720px;
+  margin: 0 auto;
+}

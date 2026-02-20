@@ -1,0 +1,73 @@
+form {
+  margin: 1rem 0;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+:root {
+  --input-padding-y: 0.6rem;
+  --input-padding-x: 0.75rem;
+  --input-border-radius: 6px;
+  --input-border: 1px solid rgba(var(--accent-yellow-dark), 0.55);
+  --input-bg: #ffffff;
+  --input-height: 40px;
+}
+
+
+label {
+  display: block;
+  font-size: 0.95rem;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="number"],
+select, textarea {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  border-radius: var(--input-border-radius);
+  border: var(--input-border);
+  background: var(--input-bg);
+  color: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  height: var(--input-height);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(var(--accent-yellow), 0.9);
+  box-shadow: 0 0 0 6px rgba(var(--accent-yellow), 0.12);
+}
+
+button[type="submit"] {
+  background: rgba(var(--accent-yellow), 1);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 100%;
+}
+
+button[type="submit"]:hover {
+  background: rgba(var(--accent-yellow), 0.92);
+}
+
+
+.form-error {
+  color: red;
+  text-align: center;
+  margin-top: 0.5rem;
+}

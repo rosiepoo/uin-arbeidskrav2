@@ -51,7 +51,6 @@ li {
 }
 
 li.bought .item-name {
-	/* use text-decoration for a reliable strike-through that overlays the text */
 	opacity: 0.9;
 	text-decoration: line-through;
 	text-decoration-color: rgba(var(--accent-yellow-dark), 0.9);
@@ -60,7 +59,7 @@ li.bought .item-name {
 }
 
 input[type="number"] {
-	width: 4.5rem;
+	width: 4rem;
 	padding: var(--input-padding-y) var(--input-padding-x);
 	border-radius: var(--input-border-radius);
 	border: var(--input-border);

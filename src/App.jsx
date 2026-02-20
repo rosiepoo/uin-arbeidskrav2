@@ -3,9 +3,6 @@ import { useState } from 'react'
 import AddForm from './components/AddForm'
 import ShoppingList from './components/ShoppingList'
 
-// AI usage: assistant helped generate component code and translations.
-// Chat log: https://chat.openai.com/ (include full submission chat link when submitting)
-
 function App() {
   const initial = [
     { id: 2, name: 'Bread', amount: 2, bought: true },

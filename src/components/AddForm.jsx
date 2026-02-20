@@ -36,6 +36,7 @@ export default function AddForm({ onAdd }) {
       <input
         id="item-name"
         type="text"
+        placeholder='Roses'
         value={name}
         onChange={(e) => setName(e.target.value)}
         aria-label="Item name"
@@ -46,6 +47,7 @@ export default function AddForm({ onAdd }) {
         id="item-amount"
         type="number"
         min="1"
+        placeholder='1'
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         aria-label="Amount"
